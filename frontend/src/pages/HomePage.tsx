@@ -1,3 +1,6 @@
+import langdingImage from "../assets/landing.png";
+import appDownloadImage from "../assets/appDownload.png";
+
 const HomePage = () => {
     return (
         <div className="flex flex-col gap-12">
@@ -6,6 +9,19 @@ const HomePage = () => {
                     Tuck into a takeaway today
                 </h1>
                 <span className="text-xl">Food is just a click away!</span>
+            </div>
+            <div className="grid md:grid-cols-2 gap-5">
+                <img src={langdingImage} />
+                <div className="flex flex-col items-center justify-center gap-4 text-center">
+                    <span className="font-bold text-3xl tracking-tighter">
+                        Take away even faster!
+                    </span>
+                    <span>
+                        Download the FoodOrdering App for faster ordering and personalised
+                        recommendations
+                    </span>
+                    <img src={appDownloadImage} />
+                </div>
             </div>
         </div>
     );
